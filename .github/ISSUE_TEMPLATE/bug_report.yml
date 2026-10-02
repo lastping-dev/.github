@@ -1,0 +1,45 @@
+name: Bug report
+description: Something in this repository does not work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Security issues go to the private channels in SECURITY.md, never here.
+        Problems with the hosted service at app.lastping.dev go to hello@lastping.dev.
+        Remove API keys (`lp_...`) and webhook URLs from everything you paste.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The smallest config or command that shows the problem.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: The full error text or log. It is formatted as code for you.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Provider version and `terraform version`, or `lastping --version`.
+      placeholder: "provider v0.5.1, Terraform v1.10.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS and architecture, and the MCP client if relevant.
+      placeholder: "macOS 15, arm64, Claude Code"

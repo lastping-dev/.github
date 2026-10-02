@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://lastping.dev
+    about: Guides for cron, CI/CD, HTTP uptime, AI agents, MCP and Terraform.
+  - name: API reference
+    url: https://app.lastping.dev/docs
+    about: The REST API and its OpenAPI document.
+  - name: Service status
+    url: https://app.lastping.dev/status/lastping-self
+    about: Check here first if the hosted service looks down.
+  - name: Email hello@lastping.dev
+    url: https://lastping.dev/about
+    about: Write to hello@lastping.dev for questions, account help and problems with the hosted service.
