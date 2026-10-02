@@ -1,32 +1,45 @@
 <p align="center">
   <a href="https://lastping.dev">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/logo-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/logo-light.png">
-      <img alt="LastPing" src="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/logo-light.png" width="260">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/hero-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/hero-light.svg">
+      <img alt="LastPing. A stopped agent looks exactly like a thinking one. Monitoring for AI agent runs, cron jobs and CI/CD. Free for individuals." src="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/hero-light.svg" width="100%">
     </picture>
   </a>
 </p>
 
-<h3 align="center">Monitoring for AI agent runs, cron jobs and CI/CD.</h3>
+<p align="center">
+  <a href="https://lastping.dev"><img alt="Website" src="https://img.shields.io/badge/Website-0f766e?style=for-the-badge"></a>
+  <a href="https://app.lastping.dev/docs"><img alt="API docs" src="https://img.shields.io/badge/API%20docs-2f3a49?style=for-the-badge"></a>
+  <a href="https://lastping.dev/mcp/"><img alt="MCP server" src="https://img.shields.io/badge/MCP%20server-2f3a49?style=for-the-badge"></a>
+  <a href="https://lastping.dev/terraform"><img alt="Terraform" src="https://img.shields.io/badge/Terraform-2f3a49?style=for-the-badge"></a>
+  <a href="https://app.lastping.dev/status/lastping-self"><img alt="Status" src="https://img.shields.io/badge/Status-2f3a49?style=for-the-badge"></a>
+  <a href="https://lastping.dev/changelog"><img alt="Changelog" src="https://img.shields.io/badge/Changelog-2f3a49?style=for-the-badge"></a>
+</p>
 
 <p align="center">
   LastPing waits for your jobs to check in. When an expected signal never arrives, it opens an incident and tells you.<br>
   <b>Free for individuals.</b> No credit card required.
 </p>
 
+<br>
+
+<h3 align="center">What LastPing watches</h3>
+
 <p align="center">
-  <a href="https://lastping.dev"><b>Website</b></a> &nbsp;&middot;&nbsp;
-  <a href="https://app.lastping.dev/docs">API docs</a> &nbsp;&middot;&nbsp;
-  <a href="https://lastping.dev/mcp/">MCP server</a> &nbsp;&middot;&nbsp;
-  <a href="https://lastping.dev/terraform">Terraform</a> &nbsp;&middot;&nbsp;
-  <a href="https://app.lastping.dev/status/lastping-self">Status</a> &nbsp;&middot;&nbsp;
-  <a href="https://lastping.dev/changelog">Changelog</a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/features-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/features-light.svg">
+    <img alt="Cron and heartbeats: your job curls one URL when it finishes; miss the window, get an incident. CI/CD: one signed webhook from GitHub Actions, GitLab CI or Jenkins catches runs that fail, hang or never start. HTTP uptime: status code, latency and keyword checks on a schedule. AI agent runs: started, progress, blocked, failed; a run that stops making progress is caught at the step it stalled on. Tracing: spans, tokens and estimated cost for traced agent runs, sent over OpenTelemetry. 9 alert destinations: email, Slack, Discord, Telegram, ntfy, Pushover, Microsoft Teams, Google Chat and a signed webhook." src="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/features-light.svg" width="100%">
+  </picture>
 </p>
 
----
+<p align="center">
+  Alerts are routed per monitor and event. One incident, not a storm, and it closes by itself when the job checks back in.
+</p>
 
-### What LastPing watches
+<details>
+<summary>The same list as text</summary>
 
 | Signal | How it works |
 |---|---|
@@ -35,8 +48,23 @@
 | **HTTP uptime** | Status code, latency and keyword checks on a schedule. |
 | **AI agent runs** | Started, progress, blocked, failed: a run says where it is, and a long run that stops making progress is caught at the step it stalled on. |
 | **Tracing** | Traced agent runs show spans, tokens and estimated cost, sent over OpenTelemetry. |
+| **Alerts** | 9 destinations: email, Slack, Discord, Telegram, ntfy, Pushover, Microsoft Teams, Google Chat and a signed webhook. |
 
-Alerts go to **9 destinations**: email, Slack, Discord, Telegram, ntfy, Pushover, Microsoft Teams, Google Chat and a signed webhook, routed per monitor and event. One incident, not a storm, and it closes by itself when the job checks back in.
+</details>
+
+<br>
+
+<h3 align="center">From a failed run to a note the next run reads</h3>
+
+<p align="center">
+  <a href="https://lastping.dev">
+    <img alt="An agent run goes from running to failed, LastPing opens an incident and delivers the alert, and the next run reads the open incident over MCP and adds a note to it." src="https://raw.githubusercontent.com/lastping-dev/.github/main/profile/assets/demo-loop.webp" width="100%">
+  </a>
+  <br>
+  <sub>A demo with sample data.</sub>
+</p>
+
+<br>
 
 ### Quick start
 
@@ -78,12 +106,10 @@ Its own ping ingest, API, remote MCP server and login page are watched on a [pub
 
 ### Links
 
-- Website: [lastping.dev](https://lastping.dev)
-- API reference: [app.lastping.dev/docs](https://app.lastping.dev/docs)
-- MCP server: [lastping.dev/mcp](https://lastping.dev/mcp/)
-- Terraform: [lastping.dev/terraform](https://lastping.dev/terraform) and the [Terraform Registry](https://registry.terraform.io/providers/lastping-dev/lastping)
-- Status: [app.lastping.dev/status/lastping-self](https://app.lastping.dev/status/lastping-self)
-- Changelog: [lastping.dev/changelog](https://lastping.dev/changelog)
-- Contact: [hello@lastping.dev](mailto:hello@lastping.dev)
+[lastping.dev](https://lastping.dev) &nbsp;&middot;&nbsp; [API reference](https://app.lastping.dev/docs) &nbsp;&middot;&nbsp; [MCP server](https://lastping.dev/mcp/) &nbsp;&middot;&nbsp; [Terraform](https://lastping.dev/terraform) and the [Terraform Registry](https://registry.terraform.io/providers/lastping-dev/lastping) &nbsp;&middot;&nbsp; [Status](https://app.lastping.dev/status/lastping-self) &nbsp;&middot;&nbsp; [Changelog](https://lastping.dev/changelog) &nbsp;&middot;&nbsp; [hello@lastping.dev](mailto:hello@lastping.dev)
 
-<p align="center"><a href="https://app.lastping.dev"><b>Start monitoring free</b></a></p>
+<br>
+
+<p align="center">
+  <a href="https://app.lastping.dev"><img alt="Start monitoring free" src="https://img.shields.io/badge/Start%20monitoring%20free-0f766e?style=for-the-badge"></a>
+</p>
